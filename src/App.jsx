@@ -1,9 +1,8 @@
-import './App.css'
+import "./App.css";
+import HomePage from "./HomePage";
 
 function App() {
-  return (
-    <h1 className="text-3xl font-bold underline text-center">Hello world!</h1> 
-  )
+  return <HomePage />;
 }
 
-export default App
+export default App;
