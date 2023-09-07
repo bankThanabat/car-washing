@@ -5,8 +5,17 @@ import Card from "./components/Card";
 import MainTitle from "./components/MainTitle";
 import Check from "./components/Check";
 import Comment from "./components/Comment";
+import Services from "./components/Services";
+import Fotter from "./components/Fotter";
+import ImageSlider from "./components/Slide";
 
 const HomePage = () => {
+  const images = [
+    "bg1.jpg",
+    "bg2.jpg",
+    "bg3.jpg",
+    // Add more image URLs as needed
+  ];
   return (
     <div>
       <Navbar />
@@ -127,6 +136,60 @@ const HomePage = () => {
           <Button text={"All Testimonials"} />
         </div>
       </div>
+      <div className="h-[80vh] bg-[#0e0e0e] py-10">
+        <div className="grid grid-cols-3 gap-16 px-10">
+          <Services
+            img={"/i1.png"}
+            title={"Secure"}
+            label={"Premises"}
+            detail={
+              " We strive on customer satisfaction, every customer has had an awesome experience with us."
+            }
+          />
+          <Services
+            img={"/i2.png"}
+            title={"Secure"}
+            label={"Premises"}
+            detail={
+              " We strive on customer satisfaction, every customer has had an awesome experience with us."
+            }
+          />
+          <Services
+            img={"/i1.png"}
+            title={"Secure"}
+            label={"Premises"}
+            detail={
+              " We strive on customer satisfaction, every customer has had an awesome experience with us."
+            }
+          />
+          <Services
+            img={"/i2.png"}
+            title={"Secure"}
+            label={"Premises"}
+            detail={
+              " We strive on customer satisfaction, every customer has had an awesome experience with us."
+            }
+          />
+          <Services
+            img={"/i1.png"}
+            title={"Secure"}
+            label={"Premises"}
+            detail={
+              " We strive on customer satisfaction, every customer has had an awesome experience with us."
+            }
+          />
+          <Services
+            img={"/i2.png"}
+            title={"Secure"}
+            label={"Premises"}
+            detail={
+              " We strive on customer satisfaction, every customer has had an awesome experience with us."
+            }
+          />
+        </div>
+      </div>
+      <ImageSlider images={images}/>
+      <Fotter />
     </div>
   );
 };
